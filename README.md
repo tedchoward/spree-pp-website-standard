@@ -31,10 +31,9 @@ Be sure to configure the following configuration parameters. Preferably put it i
 
 Example:
 
-    Spree::Paypal::Config[:account] = "foo@example.com"
-    Spree::Paypal::Config[:ipn_notify_host] = "http://123.456.78:3000"
-    Spree::Paypal::Config[:success_url] = "http://localhost:3000/checkout/success"
-
+    Spree::Paypal::Config.set(:account => "foo@example.com") 
+    Spree::Paypal::Config.set(:ipn_notify_host => "http://123.456.78:3000")
+    Spree::Paypal::Config.set(:success_url => "http://localhost:3000/checkout/success")
 
 ## Installation 
 
